@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <div class="mainBox">
 
 <div class="leftSide-products">
     <h1>Home Furniture</h1>
+
+    <button id="gotoCartButton" onclick="openCart()">Go To Cart</button>
+
 <div class="GridBox-mainBox">
 
 <div class="gridBox-smallBox">
@@ -120,7 +124,8 @@
 
 </div>
 
-<div class="rightSide-total">
+<!-- right side the whole cart check out  -->
+<div class="rightSide-total" id="controlOpenCart">
     <div class="topBox">
 <img src="https://images.pexels.com/photos/11112739/pexels-photo-11112739.jpeg?auto=compress&cs=tinysrgb&w=800"/>
 <div class="checkout-controlPriceAdd2cart">
@@ -129,26 +134,45 @@
 </div>
     </div>
 
-<h1>Cart</h1>
+    <!-- cart in the middle add to bag -->
+<h2 class="controlCartTitle">Cart</h2>
     <div class="cartBox-mainBox">
+
         <div class="item">
+            <h4>Item</h4>
 <div class="controlIMGandTitle">
+  
 <img src="https://images.pexels.com/photos/11112740/pexels-photo-11112740.jpeg?auto=compress&cs=tinysrgb&w=800"/>
 <p>Table</p>
 </div>
         </div>
-        <div class="price"></div>
-        <div class="Quantity">
 
+        <div class="price">
+            <h4>Price</h4>
+            <p>$100</p>
+        </div>
+
+        <div class="quantity">
+            <h4>Quantity</h4>
+            <div class="control-inputandRemoveButton">
+            <input type="number" value="1"/>
+            <input type="button" value="REMOVE" class="button-cart"/> 
+        </div>
         </div>
 
     </div>
+<!-- total -->
+    <div class="cart-total">
+       <p><b>Total</b> <span>$</span><span>0</span></p> 
+    </div>
+    <button class="purchaseButton">PURCHASE</button>
+    
 
 </div>
 
 
 
 </div>
-   
+<script src="index.js"></script>
 </body>
 </html>
