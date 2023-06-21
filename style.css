@@ -9,14 +9,19 @@ html,body{
     overflow-x: hidden;
 }
 
-#gotoCardButton{
+#gotoCartButton{
 position: absolute;
-right: 0;
+right: 200px;
 top: 55px;
 padding: 5px 10px;
 }
 
-
+.leftSide-products{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    
+    }
 .mainBox{
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 60px;
@@ -64,14 +69,17 @@ display: flex;
  font-weight: bold;
 }
 
-.leftSide-products{
-text-align: center;
-position: relative;
 
-}
 
 
 /* right side box -shopping cart*/
+
+.XclosingCatBox{
+    margin-top: 20px;
+    margin-left: 20px;
+cursor: pointer;
+}
+
 .rightSide-total{
 background-color: lightgray;
 /* width: 0%; */
@@ -79,7 +87,8 @@ width: 30%;
 height: 900px;
 position: fixed;
 z-index: 1;
-right: 0;
+right: -500px;
+
 }
 
 .checkout-controlPriceAdd2cart{
