@@ -26,6 +26,7 @@ padding: 5px 10px;
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 60px;
 display: flex;
+margin-bottom: 50px;
 }
 .leftSide-products h1{
     text-align: center;
@@ -65,12 +66,8 @@ display: flex;
  padding: 5px 10px;
  border: none;
  border-radius: 5px;
-
  font-weight: bold;
 }
-
-
-
 
 /* right side box -shopping cart*/
 
@@ -182,3 +179,65 @@ text-align: center;
     padding: 5px 10px;
     margin-top: 30px;
 }
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+    .gridBox-smallBox img{
+        width: 200px;
+        height: 200px;
+
+    }
+    .rightSide-total{
+        width: 45%;
+        height: 800px;
+        }
+        #gotoCartButton{
+            right: 100px;
+           
+            }
+             
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+    .GridBox-mainBox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    .gridBox-smallBox img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #gotoCartButton{
+        position: relative;
+     left: 0%;
+        top:-30px;
+        width: 40%;
+        }
+        .leftSide-products{
+                 width: 100%;
+            display: flex;
+            justify-content: center;
+         align-items: center;
+            flex-direction: column;
+            
+            }
+            .rightSide-total{
+                width: 80%;
+                height: 700px;
+                }
+                .phoneSizeButton{
+                    width: 150px;
+                }
+                .topBox{
+                    width: 80%;
+            
+                }
+ }
