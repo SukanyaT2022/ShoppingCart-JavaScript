@@ -80,7 +80,7 @@ cursor: pointer;
 .rightSide-total{
 background-color: lightgray;
 /* width: 0%; */
-width: 30%;
+width: 40%;
 height: 900px;
 position: fixed;
 z-index: 1;
@@ -170,15 +170,21 @@ text-align: center;
    margin-right: 40px;
    margin-top: 30px;
 }
-.cart-total{
 
-}
 .purchaseButton{
     display: block;
     margin: auto;
     padding: 5px 10px;
     margin-top: 30px;
 }
+/* shopping cart */
+.section-header{
+    text-align: center;
+}
+.cart-row{
+ 
+}
+
  /*ipad*/
  @media screen and (max-width: 992px) {
     .gridBox-smallBox img{
