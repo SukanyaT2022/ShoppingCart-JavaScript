@@ -87,7 +87,7 @@ function addItemToCart(title, price, imageSrc) {
     //below function ceate new row in a shopping cart
 var cartRowContents = `
         <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <img class="cart-item-image" src="${imageSrc}" width="150" height="150">
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
