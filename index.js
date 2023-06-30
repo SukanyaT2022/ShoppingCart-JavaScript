@@ -1,12 +1,12 @@
-function openCart(){
-document.getElementById("controlOpenCart").style.right="0";
-//0 cart will show up-- css line 89
-}
+// function openCart(){
+// document.getElementById("controlOpenCart").style.right="0";
+// //0 cart will show up-- css line 89
+// }
 
-function closecart(){
-    document.getElementById("controlOpenCart").style.right="-500px";
-//-500px means cart disappear
-}
+// function closecart(){
+//     document.getElementById("controlOpenCart").style.right="-500px";
+// //-500px means cart disappear
+// }
 
 
 

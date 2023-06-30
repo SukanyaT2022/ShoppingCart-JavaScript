@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif!important;
     
 }
 html,body{
@@ -19,36 +20,39 @@ padding: 5px 10px;
 .leftSide-products{
     text-align: center;
     position: relative;
-    width: 100%;
+    width: 60%;
+
+ 
     
     }
-    .leftSide-products{
-        width: 70%;
-    }
+ 
 .mainBox{
 font-family: Arial, Helvetica, sans-serif;
-margin-top: 60px;
+margin-top: 40px;
 display: flex;
 margin-bottom: 50px;
+
 }
-
-
 
 .rightside-cart{
-    width: 305;
+    width: 40%;
+  
 }
+
+
 .leftSide-products h1{
     text-align: center;
    margin: 50px;
-   
+  
 }
 
 .GridBox-mainBox{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
-    width: 60%;
-    margin: auto;
+    width: 100%;
+ padding: 0px 20px;
+  
 }
 
 .gridBox-smallBox{
@@ -60,8 +64,8 @@ margin-bottom: 50px;
 }
 
 .gridBox-smallBox img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 .controlPriceetAdd2Cart{
@@ -76,6 +80,8 @@ margin-bottom: 50px;
  border: none;
  border-radius: 5px;
  font-weight: bold;
+ background-color: black;
+ color: white;
 }
 
 /* right side box -shopping cart*/
@@ -195,65 +201,22 @@ text-align: center;
     text-align: center;
     margin: 30px 0px;
 }
-/* cart item control image */
-/* .cart-items{
-    position: relative;
-    height: 200px;
-  
-} */
-/* 
-.cart-items img{
-    margin-left: 20px;
-
-}
-.cart-item-title{
-  margin-left: 40px;
-position: absolute;
-top: 20%;
 
 
-}
 
-.cart-price{
-position: absolute;
-top: 40%;
-left: 40%;
-}
 
-.cart-quantity-input{
-    position: absolute;
-    top: 60%;
-    left: 40%; 
-}
-.removeButton{
-    position: absolute;
-    top: 60%;
-    left: 68%;
-}
-.cart-column{
-    background-color: brown;
-    height:200px;
-}
-
-.cart-row{
- 
-}
-.controlTheWholeCart{
-
-} */
-
-/* cart section F */
+/* right side-cart section F */
 
 .cart-header {
     font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
+    font-size: 15px;
+    color: black;
     }
     
     .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -264,13 +227,20 @@ left: 40%;
     }
     
     .cart-item {
-    width: 45%;
+    width: 50%;
     }
     
     .cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: #333;
+    width: 15%;
+    font-size: 15px;
+    color: black;
+  
+    }
+.controlItem{
+    margin-left: 20px;  
+}
+    .controlPrice{
+        margin-left: -50px;
     }
     
     .cart-quantity {
@@ -280,13 +250,13 @@ left: 40%;
     .cart-item-title {
     color: #333;
     margin-left: .5em;
-    font-size: 1.2em;
+    font-size: 16px;
     }
     
     .cart-item-image {
     width: 75px;
     height: 75px;
-    border-radius: 10px;
+    border-radius: 15px;
     }
     /* remove button below */
     .removeButton {
@@ -306,12 +276,12 @@ left: 40%;
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: none;
     background-color: #eee;
     color: #333;
     padding: 0;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
     margin-right: 25px;
     }
     
@@ -331,35 +301,41 @@ left: 40%;
     
     .cart-total-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 20px;
     color: black;
     margin-right: 20px;
     }
     
     .cart-total-price {
-    color: #333;
-    font-size: 1.1em;
+    color:black;
+    font-size: 20px;
     }
     /* purchase button */
     .btn-purchase {
     display: block;
-    padding: 5px 5px;
+    padding: 10px 15px;
     margin: 40px auto 80px auto;
     font-size:15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
     }
 
     .container {
         max-width: 900px;
         margin: 0 auto;
-        padding: 0 1.5em;
+    
+        background-color: #E5D3BF ;
+        padding: 3px 20px;
   
         }
         .section-header {
-        font-family: "Metal Mania";
+  
         font-weight: normal;
-        color: #333;
+        color: black;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 30px;
         }
 
         .content-section {
